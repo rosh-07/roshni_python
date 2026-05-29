@@ -1,0 +1,5 @@
+def divide_array(numbers):
+    i = 0
+    j= len((numbers)-1)
+    if numbers[i] < numbers[j]:
+        mid = (i+j)//2
