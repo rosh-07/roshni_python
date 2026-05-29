@@ -1,18 +1,34 @@
-def get_menu(choice):
-  menu = {
-    1:insert,
-    2:delete,
-    3: update
-    4:list
-    5:exit
-  }
-  return menu[choice]
 
+def Insert():
+    print('Element inserted')
+
+def Delete():
+    print('Element deleted')
+
+def Update():
+    print('Element updated')
+
+def List():
+    print('Element listed')
+
+def Exit():
+    print('Program exited')
+
+def get_menu(choice):
+    {
+        1: Insert,
+        2: Delete,
+        3: Update,
+        4: List,
+        5: Exit,
+    }
+    return [choice]
 def run_menu():
-  while true:
-    print('\n 1.insert 2.delete 3.update 4.list 5.exit')
-    choice = int(input('your choice plz:'))
-    get_menu(choice)
-    if choice==5:
-      break
-    
+    while True:
+        print('\n 1:Insert 2: Delete 3:Update 4:List 5:Exit')
+        choice = int(input('Your choice please:'))
+        get_menu(choice)
+        if choice == 5:
+            break
+
+run_menu
